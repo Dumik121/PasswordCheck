@@ -1,0 +1,8 @@
+<div class="InputContainer">
+  <input (keyup)="Validate($event)" placeholder="Enter password" (keydown.space)="$event.preventDefault()"/>
+</div>
+<section class="CircleSection">
+  <div [className]="'circle' + addClass"></div>
+  <div [className]="'circle' + addClass"></div>
+  <div [className]="'circle' + addClass"></div>
+</section>
