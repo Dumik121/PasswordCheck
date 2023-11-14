@@ -3,16 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { InpunVieldComponent } from './inpun-vield/inpun-vield.component';
+import { CirclesSectionComponent } from './circles-section/circles-section.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InpunVieldComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, InpunVieldComponent, CirclesSectionComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

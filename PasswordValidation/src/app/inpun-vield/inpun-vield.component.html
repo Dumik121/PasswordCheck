@@ -1,8 +1,10 @@
 <div class="InputContainer">
-  <input (input)="Validate($event)" placeholder="Enter password" (keydown.space)="$event.preventDefault()"/>
+  <input
+    (input)="onInputChange($event)"
+    placeholder="Enter password"
+    (keydown.space)="$event.preventDefault()"
+    [(ngModel)]="password"
+    type="password"
+  />
 </div>
-<section class="CircleSection">
-  <div [className]="'circle' + addClass"></div>
-  <div [className]="'circle' + addClass"></div>
-  <div [className]="'circle' + addClass"></div>
-</section>
+<app-circles-section [circleClass]="addClass"></app-circles-section>
